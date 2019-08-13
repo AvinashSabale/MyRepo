@@ -1,0 +1,28 @@
+CREATE TABLE Manager  
+(  
+email varchar(255) NOT NULL,
+firstName varchar(255) NOT NULL,  
+lastName varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+dob date,     
+address varchar(255), 
+company varchar(255)NOT NULL,  
+PRIMARY KEY (email)
+);
+
+
+INSERT INTO Manager VALUES ('avi@gmail.com','Avinash','Sabale','avi101','1991-08-24','Nager','MindBowser');
+
+
+CREATE TABLE Employee(
+	 empId varchar(255) NOT NULL,
+  	 firstName varchar(255) NOT NULL,
+	 lastName varchar(255) NOT NULL,
+    	 address varchar(255),
+   	 dob date,
+  	 mobile INT(100) NOT NULL,
+   	 city varchar(255) NOT NULL,
+    	 PRIMARY KEY (empId)
+	 );
+
+INSERT INTO Employee VALUES ('E1001','Sachin','Phalak','Nashik','1993-07-04',997006,'Pune');
